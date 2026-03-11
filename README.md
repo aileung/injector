@@ -1,2 +1,2 @@
 # injector
-basic gdb and dll injection tool for windows, mac, and linux
+gdb and dll injector for debugging
