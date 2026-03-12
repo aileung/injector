@@ -116,6 +116,259 @@ depend:
 	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
+#=============================================================================
+# Target rules for targets named injector
+
+# Build rule for target.
+injector: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 injector
+.PHONY : injector
+
+# fast build rule for target.
+injector/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/injector.dir/build.make CMakeFiles/injector.dir/build
+.PHONY : injector/fast
+
+src/core/injector.o: src/core/injector.cpp.o
+.PHONY : src/core/injector.o
+
+# target to build an object file
+src/core/injector.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/injector.dir/build.make CMakeFiles/injector.dir/src/core/injector.cpp.o
+.PHONY : src/core/injector.cpp.o
+
+src/core/injector.i: src/core/injector.cpp.i
+.PHONY : src/core/injector.i
+
+# target to preprocess a source file
+src/core/injector.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/injector.dir/build.make CMakeFiles/injector.dir/src/core/injector.cpp.i
+.PHONY : src/core/injector.cpp.i
+
+src/core/injector.s: src/core/injector.cpp.s
+.PHONY : src/core/injector.s
+
+# target to generate assembly for a file
+src/core/injector.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/injector.dir/build.make CMakeFiles/injector.dir/src/core/injector.cpp.s
+.PHONY : src/core/injector.cpp.s
+
+src/core/memory.o: src/core/memory.cpp.o
+.PHONY : src/core/memory.o
+
+# target to build an object file
+src/core/memory.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/injector.dir/build.make CMakeFiles/injector.dir/src/core/memory.cpp.o
+.PHONY : src/core/memory.cpp.o
+
+src/core/memory.i: src/core/memory.cpp.i
+.PHONY : src/core/memory.i
+
+# target to preprocess a source file
+src/core/memory.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/injector.dir/build.make CMakeFiles/injector.dir/src/core/memory.cpp.i
+.PHONY : src/core/memory.cpp.i
+
+src/core/memory.s: src/core/memory.cpp.s
+.PHONY : src/core/memory.s
+
+# target to generate assembly for a file
+src/core/memory.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/injector.dir/build.make CMakeFiles/injector.dir/src/core/memory.cpp.s
+.PHONY : src/core/memory.cpp.s
+
+src/core/process.o: src/core/process.cpp.o
+.PHONY : src/core/process.o
+
+# target to build an object file
+src/core/process.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/injector.dir/build.make CMakeFiles/injector.dir/src/core/process.cpp.o
+.PHONY : src/core/process.cpp.o
+
+src/core/process.i: src/core/process.cpp.i
+.PHONY : src/core/process.i
+
+# target to preprocess a source file
+src/core/process.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/injector.dir/build.make CMakeFiles/injector.dir/src/core/process.cpp.i
+.PHONY : src/core/process.cpp.i
+
+src/core/process.s: src/core/process.cpp.s
+.PHONY : src/core/process.s
+
+# target to generate assembly for a file
+src/core/process.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/injector.dir/build.make CMakeFiles/injector.dir/src/core/process.cpp.s
+.PHONY : src/core/process.cpp.s
+
+src/main.o: src/main.cpp.o
+.PHONY : src/main.o
+
+# target to build an object file
+src/main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/injector.dir/build.make CMakeFiles/injector.dir/src/main.cpp.o
+.PHONY : src/main.cpp.o
+
+src/main.i: src/main.cpp.i
+.PHONY : src/main.i
+
+# target to preprocess a source file
+src/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/injector.dir/build.make CMakeFiles/injector.dir/src/main.cpp.i
+.PHONY : src/main.cpp.i
+
+src/main.s: src/main.cpp.s
+.PHONY : src/main.s
+
+# target to generate assembly for a file
+src/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/injector.dir/build.make CMakeFiles/injector.dir/src/main.cpp.s
+.PHONY : src/main.cpp.s
+
+src/methods/loadlibrary.o: src/methods/loadlibrary.cpp.o
+.PHONY : src/methods/loadlibrary.o
+
+# target to build an object file
+src/methods/loadlibrary.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/injector.dir/build.make CMakeFiles/injector.dir/src/methods/loadlibrary.cpp.o
+.PHONY : src/methods/loadlibrary.cpp.o
+
+src/methods/loadlibrary.i: src/methods/loadlibrary.cpp.i
+.PHONY : src/methods/loadlibrary.i
+
+# target to preprocess a source file
+src/methods/loadlibrary.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/injector.dir/build.make CMakeFiles/injector.dir/src/methods/loadlibrary.cpp.i
+.PHONY : src/methods/loadlibrary.cpp.i
+
+src/methods/loadlibrary.s: src/methods/loadlibrary.cpp.s
+.PHONY : src/methods/loadlibrary.s
+
+# target to generate assembly for a file
+src/methods/loadlibrary.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/injector.dir/build.make CMakeFiles/injector.dir/src/methods/loadlibrary.cpp.s
+.PHONY : src/methods/loadlibrary.cpp.s
+
+src/methods/manual_map.o: src/methods/manual_map.cpp.o
+.PHONY : src/methods/manual_map.o
+
+# target to build an object file
+src/methods/manual_map.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/injector.dir/build.make CMakeFiles/injector.dir/src/methods/manual_map.cpp.o
+.PHONY : src/methods/manual_map.cpp.o
+
+src/methods/manual_map.i: src/methods/manual_map.cpp.i
+.PHONY : src/methods/manual_map.i
+
+# target to preprocess a source file
+src/methods/manual_map.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/injector.dir/build.make CMakeFiles/injector.dir/src/methods/manual_map.cpp.i
+.PHONY : src/methods/manual_map.cpp.i
+
+src/methods/manual_map.s: src/methods/manual_map.cpp.s
+.PHONY : src/methods/manual_map.s
+
+# target to generate assembly for a file
+src/methods/manual_map.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/injector.dir/build.make CMakeFiles/injector.dir/src/methods/manual_map.cpp.s
+.PHONY : src/methods/manual_map.cpp.s
+
+src/methods/thread_hijack.o: src/methods/thread_hijack.cpp.o
+.PHONY : src/methods/thread_hijack.o
+
+# target to build an object file
+src/methods/thread_hijack.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/injector.dir/build.make CMakeFiles/injector.dir/src/methods/thread_hijack.cpp.o
+.PHONY : src/methods/thread_hijack.cpp.o
+
+src/methods/thread_hijack.i: src/methods/thread_hijack.cpp.i
+.PHONY : src/methods/thread_hijack.i
+
+# target to preprocess a source file
+src/methods/thread_hijack.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/injector.dir/build.make CMakeFiles/injector.dir/src/methods/thread_hijack.cpp.i
+.PHONY : src/methods/thread_hijack.cpp.i
+
+src/methods/thread_hijack.s: src/methods/thread_hijack.cpp.s
+.PHONY : src/methods/thread_hijack.s
+
+# target to generate assembly for a file
+src/methods/thread_hijack.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/injector.dir/build.make CMakeFiles/injector.dir/src/methods/thread_hijack.cpp.s
+.PHONY : src/methods/thread_hijack.cpp.s
+
+src/platform/mac/process_macos.o: src/platform/mac/process_macos.cpp.o
+.PHONY : src/platform/mac/process_macos.o
+
+# target to build an object file
+src/platform/mac/process_macos.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/injector.dir/build.make CMakeFiles/injector.dir/src/platform/mac/process_macos.cpp.o
+.PHONY : src/platform/mac/process_macos.cpp.o
+
+src/platform/mac/process_macos.i: src/platform/mac/process_macos.cpp.i
+.PHONY : src/platform/mac/process_macos.i
+
+# target to preprocess a source file
+src/platform/mac/process_macos.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/injector.dir/build.make CMakeFiles/injector.dir/src/platform/mac/process_macos.cpp.i
+.PHONY : src/platform/mac/process_macos.cpp.i
+
+src/platform/mac/process_macos.s: src/platform/mac/process_macos.cpp.s
+.PHONY : src/platform/mac/process_macos.s
+
+# target to generate assembly for a file
+src/platform/mac/process_macos.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/injector.dir/build.make CMakeFiles/injector.dir/src/platform/mac/process_macos.cpp.s
+.PHONY : src/platform/mac/process_macos.cpp.s
+
+src/stealth/dll_scramble.o: src/stealth/dll_scramble.cpp.o
+.PHONY : src/stealth/dll_scramble.o
+
+# target to build an object file
+src/stealth/dll_scramble.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/injector.dir/build.make CMakeFiles/injector.dir/src/stealth/dll_scramble.cpp.o
+.PHONY : src/stealth/dll_scramble.cpp.o
+
+src/stealth/dll_scramble.i: src/stealth/dll_scramble.cpp.i
+.PHONY : src/stealth/dll_scramble.i
+
+# target to preprocess a source file
+src/stealth/dll_scramble.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/injector.dir/build.make CMakeFiles/injector.dir/src/stealth/dll_scramble.cpp.i
+.PHONY : src/stealth/dll_scramble.cpp.i
+
+src/stealth/dll_scramble.s: src/stealth/dll_scramble.cpp.s
+.PHONY : src/stealth/dll_scramble.s
+
+# target to generate assembly for a file
+src/stealth/dll_scramble.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/injector.dir/build.make CMakeFiles/injector.dir/src/stealth/dll_scramble.cpp.s
+.PHONY : src/stealth/dll_scramble.cpp.s
+
+src/stealth/header_erase.o: src/stealth/header_erase.cpp.o
+.PHONY : src/stealth/header_erase.o
+
+# target to build an object file
+src/stealth/header_erase.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/injector.dir/build.make CMakeFiles/injector.dir/src/stealth/header_erase.cpp.o
+.PHONY : src/stealth/header_erase.cpp.o
+
+src/stealth/header_erase.i: src/stealth/header_erase.cpp.i
+.PHONY : src/stealth/header_erase.i
+
+# target to preprocess a source file
+src/stealth/header_erase.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/injector.dir/build.make CMakeFiles/injector.dir/src/stealth/header_erase.cpp.i
+.PHONY : src/stealth/header_erase.cpp.i
+
+src/stealth/header_erase.s: src/stealth/header_erase.cpp.s
+.PHONY : src/stealth/header_erase.s
+
+# target to generate assembly for a file
+src/stealth/header_erase.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/injector.dir/build.make CMakeFiles/injector.dir/src/stealth/header_erase.cpp.s
+.PHONY : src/stealth/header_erase.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -124,6 +377,37 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... injector"
+	@echo "... src/core/injector.o"
+	@echo "... src/core/injector.i"
+	@echo "... src/core/injector.s"
+	@echo "... src/core/memory.o"
+	@echo "... src/core/memory.i"
+	@echo "... src/core/memory.s"
+	@echo "... src/core/process.o"
+	@echo "... src/core/process.i"
+	@echo "... src/core/process.s"
+	@echo "... src/main.o"
+	@echo "... src/main.i"
+	@echo "... src/main.s"
+	@echo "... src/methods/loadlibrary.o"
+	@echo "... src/methods/loadlibrary.i"
+	@echo "... src/methods/loadlibrary.s"
+	@echo "... src/methods/manual_map.o"
+	@echo "... src/methods/manual_map.i"
+	@echo "... src/methods/manual_map.s"
+	@echo "... src/methods/thread_hijack.o"
+	@echo "... src/methods/thread_hijack.i"
+	@echo "... src/methods/thread_hijack.s"
+	@echo "... src/platform/mac/process_macos.o"
+	@echo "... src/platform/mac/process_macos.i"
+	@echo "... src/platform/mac/process_macos.s"
+	@echo "... src/stealth/dll_scramble.o"
+	@echo "... src/stealth/dll_scramble.i"
+	@echo "... src/stealth/dll_scramble.s"
+	@echo "... src/stealth/header_erase.o"
+	@echo "... src/stealth/header_erase.i"
+	@echo "... src/stealth/header_erase.s"
 .PHONY : help
 
 

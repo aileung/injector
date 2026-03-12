@@ -1,2 +1,3 @@
+/Users/aidan/Desktop/git/repos/injector/build/CMakeFiles/injector.dir
 /Users/aidan/Desktop/git/repos/injector/build/CMakeFiles/edit_cache.dir
 /Users/aidan/Desktop/git/repos/injector/build/CMakeFiles/rebuild_cache.dir

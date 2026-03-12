@@ -63,11 +63,11 @@ CMAKE_BINARY_DIR = /Users/aidan/Desktop/git/repos/injector/build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all:
+all: CMakeFiles/injector.dir/all
 .PHONY : all
 
 # The main recursive "codegen" target.
-codegen:
+codegen: CMakeFiles/injector.dir/codegen
 .PHONY : codegen
 
 # The main recursive "preinstall" target.
@@ -75,8 +75,40 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean:
+clean: CMakeFiles/injector.dir/clean
 .PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/injector.dir
+
+# All Build rule for target.
+CMakeFiles/injector.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/injector.dir/build.make CMakeFiles/injector.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/injector.dir/build.make CMakeFiles/injector.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/aidan/Desktop/git/repos/injector/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11 "Built target injector"
+.PHONY : CMakeFiles/injector.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/injector.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/aidan/Desktop/git/repos/injector/build/CMakeFiles 11
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/injector.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/aidan/Desktop/git/repos/injector/build/CMakeFiles 0
+.PHONY : CMakeFiles/injector.dir/rule
+
+# Convenience name for target.
+injector: CMakeFiles/injector.dir/rule
+.PHONY : injector
+
+# codegen rule for target.
+CMakeFiles/injector.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/injector.dir/build.make CMakeFiles/injector.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/aidan/Desktop/git/repos/injector/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11 "Finished codegen for target injector"
+.PHONY : CMakeFiles/injector.dir/codegen
+
+# clean rule for target.
+CMakeFiles/injector.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/injector.dir/build.make CMakeFiles/injector.dir/clean
+.PHONY : CMakeFiles/injector.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

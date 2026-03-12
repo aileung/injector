@@ -1,1 +1,62 @@
-build/compile_commands.json
+[
+{
+  "directory": "/Users/aidan/Desktop/git/repos/injector/build",
+  "command": "/usr/bin/c++  -I/Users/aidan/Desktop/git/repos/injector/include -std=gnu++20 -arch arm64 -o CMakeFiles/injector.dir/src/main.cpp.o -c /Users/aidan/Desktop/git/repos/injector/src/main.cpp",
+  "file": "/Users/aidan/Desktop/git/repos/injector/src/main.cpp",
+  "output": "CMakeFiles/injector.dir/src/main.cpp.o"
+},
+{
+  "directory": "/Users/aidan/Desktop/git/repos/injector/build",
+  "command": "/usr/bin/c++  -I/Users/aidan/Desktop/git/repos/injector/include -std=gnu++20 -arch arm64 -o CMakeFiles/injector.dir/src/core/injector.cpp.o -c /Users/aidan/Desktop/git/repos/injector/src/core/injector.cpp",
+  "file": "/Users/aidan/Desktop/git/repos/injector/src/core/injector.cpp",
+  "output": "CMakeFiles/injector.dir/src/core/injector.cpp.o"
+},
+{
+  "directory": "/Users/aidan/Desktop/git/repos/injector/build",
+  "command": "/usr/bin/c++  -I/Users/aidan/Desktop/git/repos/injector/include -std=gnu++20 -arch arm64 -o CMakeFiles/injector.dir/src/core/process.cpp.o -c /Users/aidan/Desktop/git/repos/injector/src/core/process.cpp",
+  "file": "/Users/aidan/Desktop/git/repos/injector/src/core/process.cpp",
+  "output": "CMakeFiles/injector.dir/src/core/process.cpp.o"
+},
+{
+  "directory": "/Users/aidan/Desktop/git/repos/injector/build",
+  "command": "/usr/bin/c++  -I/Users/aidan/Desktop/git/repos/injector/include -std=gnu++20 -arch arm64 -o CMakeFiles/injector.dir/src/core/memory.cpp.o -c /Users/aidan/Desktop/git/repos/injector/src/core/memory.cpp",
+  "file": "/Users/aidan/Desktop/git/repos/injector/src/core/memory.cpp",
+  "output": "CMakeFiles/injector.dir/src/core/memory.cpp.o"
+},
+{
+  "directory": "/Users/aidan/Desktop/git/repos/injector/build",
+  "command": "/usr/bin/c++  -I/Users/aidan/Desktop/git/repos/injector/include -std=gnu++20 -arch arm64 -o CMakeFiles/injector.dir/src/methods/manual_map.cpp.o -c /Users/aidan/Desktop/git/repos/injector/src/methods/manual_map.cpp",
+  "file": "/Users/aidan/Desktop/git/repos/injector/src/methods/manual_map.cpp",
+  "output": "CMakeFiles/injector.dir/src/methods/manual_map.cpp.o"
+},
+{
+  "directory": "/Users/aidan/Desktop/git/repos/injector/build",
+  "command": "/usr/bin/c++  -I/Users/aidan/Desktop/git/repos/injector/include -std=gnu++20 -arch arm64 -o CMakeFiles/injector.dir/src/methods/loadlibrary.cpp.o -c /Users/aidan/Desktop/git/repos/injector/src/methods/loadlibrary.cpp",
+  "file": "/Users/aidan/Desktop/git/repos/injector/src/methods/loadlibrary.cpp",
+  "output": "CMakeFiles/injector.dir/src/methods/loadlibrary.cpp.o"
+},
+{
+  "directory": "/Users/aidan/Desktop/git/repos/injector/build",
+  "command": "/usr/bin/c++  -I/Users/aidan/Desktop/git/repos/injector/include -std=gnu++20 -arch arm64 -o CMakeFiles/injector.dir/src/methods/thread_hijack.cpp.o -c /Users/aidan/Desktop/git/repos/injector/src/methods/thread_hijack.cpp",
+  "file": "/Users/aidan/Desktop/git/repos/injector/src/methods/thread_hijack.cpp",
+  "output": "CMakeFiles/injector.dir/src/methods/thread_hijack.cpp.o"
+},
+{
+  "directory": "/Users/aidan/Desktop/git/repos/injector/build",
+  "command": "/usr/bin/c++  -I/Users/aidan/Desktop/git/repos/injector/include -std=gnu++20 -arch arm64 -o CMakeFiles/injector.dir/src/stealth/header_erase.cpp.o -c /Users/aidan/Desktop/git/repos/injector/src/stealth/header_erase.cpp",
+  "file": "/Users/aidan/Desktop/git/repos/injector/src/stealth/header_erase.cpp",
+  "output": "CMakeFiles/injector.dir/src/stealth/header_erase.cpp.o"
+},
+{
+  "directory": "/Users/aidan/Desktop/git/repos/injector/build",
+  "command": "/usr/bin/c++  -I/Users/aidan/Desktop/git/repos/injector/include -std=gnu++20 -arch arm64 -o CMakeFiles/injector.dir/src/stealth/dll_scramble.cpp.o -c /Users/aidan/Desktop/git/repos/injector/src/stealth/dll_scramble.cpp",
+  "file": "/Users/aidan/Desktop/git/repos/injector/src/stealth/dll_scramble.cpp",
+  "output": "CMakeFiles/injector.dir/src/stealth/dll_scramble.cpp.o"
+},
+{
+  "directory": "/Users/aidan/Desktop/git/repos/injector/build",
+  "command": "/usr/bin/c++  -I/Users/aidan/Desktop/git/repos/injector/include -std=gnu++20 -arch arm64 -o CMakeFiles/injector.dir/src/platform/mac/process_macos.cpp.o -c /Users/aidan/Desktop/git/repos/injector/src/platform/mac/process_macos.cpp",
+  "file": "/Users/aidan/Desktop/git/repos/injector/src/platform/mac/process_macos.cpp",
+  "output": "CMakeFiles/injector.dir/src/platform/mac/process_macos.cpp.o"
+}
+]

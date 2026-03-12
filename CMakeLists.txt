@@ -12,7 +12,7 @@ set(CMAKE_CXX_FLAGS_RELEASE "-03")
 
 set(CORE_SOURCES
   src/main.cpp
-  src/core/inject.cpp
+  src/core/injector.cpp
   src/core/process.cpp
   src/core/memory.cpp
 )
@@ -52,6 +52,10 @@ add_executable(injector
   ${METHOD_SOURCES}
   ${STEALTH_SOURCES}
   ${PLATFORM_SOURCES}
+)
+
+target_include_directories(injector
+  PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/include
 )
 
 # platform libraries

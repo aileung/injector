@@ -2,7 +2,7 @@
 #include <iostream>
 #include <string>
 
-#include "../include/injector.h"
+#include "injector.h"
 
 void print_usage() {
   std::cout << "injector <pid> <dll_path> [method]\n";
@@ -10,13 +10,15 @@ void print_usage() {
 }
 
 InjectionMethod parse_method(const std::string &method) {
-  if (method == "loadlibrary")
+  if (method == "loadlibrary") {
     return InjectionMethod::LoadLibrary;
-  if (method == "manualmap")
+  }
+  if (method == "manualmap") {
     return InjectionMethod::ManualMap;
-  if (method == "threadhijack")
+  }
+  if (method == "threadhijack") {
     return InjectionMethod::ThreadHijack;
-
+  }
   throw std::runtime_error("unknown injection method");
 }
 
