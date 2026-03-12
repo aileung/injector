@@ -14,10 +14,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/Users/aidan/Desktop/git/repos/injector/src/main.cpp" "CMakeFiles/injector.dir/src/main.cpp.o" "gcc" "CMakeFiles/injector.dir/src/main.cpp.o.d"
   "/Users/aidan/Desktop/git/repos/injector/src/methods/loadlibrary.cpp" "CMakeFiles/injector.dir/src/methods/loadlibrary.cpp.o" "gcc" "CMakeFiles/injector.dir/src/methods/loadlibrary.cpp.o.d"
   "/Users/aidan/Desktop/git/repos/injector/src/methods/manual_map.cpp" "CMakeFiles/injector.dir/src/methods/manual_map.cpp.o" "gcc" "CMakeFiles/injector.dir/src/methods/manual_map.cpp.o.d"
-  "/Users/aidan/Desktop/git/repos/injector/src/methods/thread_hijack.cpp" "CMakeFiles/injector.dir/src/methods/thread_hijack.cpp.o" "gcc" "CMakeFiles/injector.dir/src/methods/thread_hijack.cpp.o.d"
   "/Users/aidan/Desktop/git/repos/injector/src/platform/mac/process_macos.cpp" "CMakeFiles/injector.dir/src/platform/mac/process_macos.cpp.o" "gcc" "CMakeFiles/injector.dir/src/platform/mac/process_macos.cpp.o.d"
-  "/Users/aidan/Desktop/git/repos/injector/src/stealth/dll_scramble.cpp" "CMakeFiles/injector.dir/src/stealth/dll_scramble.cpp.o" "gcc" "CMakeFiles/injector.dir/src/stealth/dll_scramble.cpp.o.d"
-  "/Users/aidan/Desktop/git/repos/injector/src/stealth/header_erase.cpp" "CMakeFiles/injector.dir/src/stealth/header_erase.cpp.o" "gcc" "CMakeFiles/injector.dir/src/stealth/header_erase.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

@@ -20,12 +20,6 @@ set(CORE_SOURCES
 set(METHOD_SOURCES
   src/methods/manual_map.cpp
   src/methods/loadlibrary.cpp
-  src/methods/thread_hijack.cpp
-)
-
-set(STEALTH_SOURCES
-  src/stealth/header_erase.cpp
-  src/stealth/dll_scramble.cpp
 )
 
 # platform specific sources
@@ -50,12 +44,11 @@ endif()
 add_executable(injector
   ${CORE_SOURCES}
   ${METHOD_SOURCES}
-  ${STEALTH_SOURCES}
   ${PLATFORM_SOURCES}
 )
 
-target_include_directories(injector
-  PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/include
+target_include_directories(injector PRIVATE
+  ${CMAKE_CURRENT_SOURCE_DIR}/include
 )
 
 # platform libraries

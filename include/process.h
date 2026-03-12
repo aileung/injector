@@ -1,11 +1,12 @@
 #pragma once
 
 #include <cstddef>
-#include <cstdint>
-#include <system_error>
 
 class Process {
 public:
+  Process() = default;
+  ~Process();
+
   bool attach(int pid);
   void detach();
 
@@ -20,5 +21,6 @@ public:
   bool valid() const;
 
 private:
-  int pid = -1;
+  struct Impl;
+  Impl *impl = nullptr;
 };

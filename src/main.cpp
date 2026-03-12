@@ -6,7 +6,7 @@
 
 void print_usage() {
   std::cout << "injector <pid> <dll_path> [method]\n";
-  std::cout << "Methods: loadlibrary, manualmap, threadhijack";
+  std::cout << "methods: loadlibrary, manualmap";
 }
 
 InjectionMethod parse_method(const std::string &method) {
@@ -15,9 +15,6 @@ InjectionMethod parse_method(const std::string &method) {
   }
   if (method == "manualmap") {
     return InjectionMethod::ManualMap;
-  }
-  if (method == "threadhijack") {
-    return InjectionMethod::ThreadHijack;
   }
   throw std::runtime_error("unknown injection method");
 }

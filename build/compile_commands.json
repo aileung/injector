@@ -37,24 +37,6 @@
 },
 {
   "directory": "/Users/aidan/Desktop/git/repos/injector/build",
-  "command": "/usr/bin/c++  -I/Users/aidan/Desktop/git/repos/injector/include -std=gnu++20 -arch arm64 -o CMakeFiles/injector.dir/src/methods/thread_hijack.cpp.o -c /Users/aidan/Desktop/git/repos/injector/src/methods/thread_hijack.cpp",
-  "file": "/Users/aidan/Desktop/git/repos/injector/src/methods/thread_hijack.cpp",
-  "output": "CMakeFiles/injector.dir/src/methods/thread_hijack.cpp.o"
-},
-{
-  "directory": "/Users/aidan/Desktop/git/repos/injector/build",
-  "command": "/usr/bin/c++  -I/Users/aidan/Desktop/git/repos/injector/include -std=gnu++20 -arch arm64 -o CMakeFiles/injector.dir/src/stealth/header_erase.cpp.o -c /Users/aidan/Desktop/git/repos/injector/src/stealth/header_erase.cpp",
-  "file": "/Users/aidan/Desktop/git/repos/injector/src/stealth/header_erase.cpp",
-  "output": "CMakeFiles/injector.dir/src/stealth/header_erase.cpp.o"
-},
-{
-  "directory": "/Users/aidan/Desktop/git/repos/injector/build",
-  "command": "/usr/bin/c++  -I/Users/aidan/Desktop/git/repos/injector/include -std=gnu++20 -arch arm64 -o CMakeFiles/injector.dir/src/stealth/dll_scramble.cpp.o -c /Users/aidan/Desktop/git/repos/injector/src/stealth/dll_scramble.cpp",
-  "file": "/Users/aidan/Desktop/git/repos/injector/src/stealth/dll_scramble.cpp",
-  "output": "CMakeFiles/injector.dir/src/stealth/dll_scramble.cpp.o"
-},
-{
-  "directory": "/Users/aidan/Desktop/git/repos/injector/build",
   "command": "/usr/bin/c++  -I/Users/aidan/Desktop/git/repos/injector/include -std=gnu++20 -arch arm64 -o CMakeFiles/injector.dir/src/platform/mac/process_macos.cpp.o -c /Users/aidan/Desktop/git/repos/injector/src/platform/mac/process_macos.cpp",
   "file": "/Users/aidan/Desktop/git/repos/injector/src/platform/mac/process_macos.cpp",
   "output": "CMakeFiles/injector.dir/src/platform/mac/process_macos.cpp.o"

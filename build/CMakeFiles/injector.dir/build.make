@@ -156,52 +156,10 @@ CMakeFiles/injector.dir/src/methods/loadlibrary.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/injector.dir/src/methods/loadlibrary.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/aidan/Desktop/git/repos/injector/src/methods/loadlibrary.cpp -o CMakeFiles/injector.dir/src/methods/loadlibrary.cpp.s
 
-CMakeFiles/injector.dir/src/methods/thread_hijack.cpp.o: CMakeFiles/injector.dir/flags.make
-CMakeFiles/injector.dir/src/methods/thread_hijack.cpp.o: /Users/aidan/Desktop/git/repos/injector/src/methods/thread_hijack.cpp
-CMakeFiles/injector.dir/src/methods/thread_hijack.cpp.o: CMakeFiles/injector.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/aidan/Desktop/git/repos/injector/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/injector.dir/src/methods/thread_hijack.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/injector.dir/src/methods/thread_hijack.cpp.o -MF CMakeFiles/injector.dir/src/methods/thread_hijack.cpp.o.d -o CMakeFiles/injector.dir/src/methods/thread_hijack.cpp.o -c /Users/aidan/Desktop/git/repos/injector/src/methods/thread_hijack.cpp
-
-CMakeFiles/injector.dir/src/methods/thread_hijack.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/injector.dir/src/methods/thread_hijack.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/aidan/Desktop/git/repos/injector/src/methods/thread_hijack.cpp > CMakeFiles/injector.dir/src/methods/thread_hijack.cpp.i
-
-CMakeFiles/injector.dir/src/methods/thread_hijack.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/injector.dir/src/methods/thread_hijack.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/aidan/Desktop/git/repos/injector/src/methods/thread_hijack.cpp -o CMakeFiles/injector.dir/src/methods/thread_hijack.cpp.s
-
-CMakeFiles/injector.dir/src/stealth/header_erase.cpp.o: CMakeFiles/injector.dir/flags.make
-CMakeFiles/injector.dir/src/stealth/header_erase.cpp.o: /Users/aidan/Desktop/git/repos/injector/src/stealth/header_erase.cpp
-CMakeFiles/injector.dir/src/stealth/header_erase.cpp.o: CMakeFiles/injector.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/aidan/Desktop/git/repos/injector/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/injector.dir/src/stealth/header_erase.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/injector.dir/src/stealth/header_erase.cpp.o -MF CMakeFiles/injector.dir/src/stealth/header_erase.cpp.o.d -o CMakeFiles/injector.dir/src/stealth/header_erase.cpp.o -c /Users/aidan/Desktop/git/repos/injector/src/stealth/header_erase.cpp
-
-CMakeFiles/injector.dir/src/stealth/header_erase.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/injector.dir/src/stealth/header_erase.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/aidan/Desktop/git/repos/injector/src/stealth/header_erase.cpp > CMakeFiles/injector.dir/src/stealth/header_erase.cpp.i
-
-CMakeFiles/injector.dir/src/stealth/header_erase.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/injector.dir/src/stealth/header_erase.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/aidan/Desktop/git/repos/injector/src/stealth/header_erase.cpp -o CMakeFiles/injector.dir/src/stealth/header_erase.cpp.s
-
-CMakeFiles/injector.dir/src/stealth/dll_scramble.cpp.o: CMakeFiles/injector.dir/flags.make
-CMakeFiles/injector.dir/src/stealth/dll_scramble.cpp.o: /Users/aidan/Desktop/git/repos/injector/src/stealth/dll_scramble.cpp
-CMakeFiles/injector.dir/src/stealth/dll_scramble.cpp.o: CMakeFiles/injector.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/aidan/Desktop/git/repos/injector/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/injector.dir/src/stealth/dll_scramble.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/injector.dir/src/stealth/dll_scramble.cpp.o -MF CMakeFiles/injector.dir/src/stealth/dll_scramble.cpp.o.d -o CMakeFiles/injector.dir/src/stealth/dll_scramble.cpp.o -c /Users/aidan/Desktop/git/repos/injector/src/stealth/dll_scramble.cpp
-
-CMakeFiles/injector.dir/src/stealth/dll_scramble.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/injector.dir/src/stealth/dll_scramble.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/aidan/Desktop/git/repos/injector/src/stealth/dll_scramble.cpp > CMakeFiles/injector.dir/src/stealth/dll_scramble.cpp.i
-
-CMakeFiles/injector.dir/src/stealth/dll_scramble.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/injector.dir/src/stealth/dll_scramble.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/aidan/Desktop/git/repos/injector/src/stealth/dll_scramble.cpp -o CMakeFiles/injector.dir/src/stealth/dll_scramble.cpp.s
-
 CMakeFiles/injector.dir/src/platform/mac/process_macos.cpp.o: CMakeFiles/injector.dir/flags.make
 CMakeFiles/injector.dir/src/platform/mac/process_macos.cpp.o: /Users/aidan/Desktop/git/repos/injector/src/platform/mac/process_macos.cpp
 CMakeFiles/injector.dir/src/platform/mac/process_macos.cpp.o: CMakeFiles/injector.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/aidan/Desktop/git/repos/injector/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/injector.dir/src/platform/mac/process_macos.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/aidan/Desktop/git/repos/injector/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/injector.dir/src/platform/mac/process_macos.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/injector.dir/src/platform/mac/process_macos.cpp.o -MF CMakeFiles/injector.dir/src/platform/mac/process_macos.cpp.o.d -o CMakeFiles/injector.dir/src/platform/mac/process_macos.cpp.o -c /Users/aidan/Desktop/git/repos/injector/src/platform/mac/process_macos.cpp
 
 CMakeFiles/injector.dir/src/platform/mac/process_macos.cpp.i: cmake_force
@@ -220,9 +178,6 @@ injector_OBJECTS = \
 "CMakeFiles/injector.dir/src/core/memory.cpp.o" \
 "CMakeFiles/injector.dir/src/methods/manual_map.cpp.o" \
 "CMakeFiles/injector.dir/src/methods/loadlibrary.cpp.o" \
-"CMakeFiles/injector.dir/src/methods/thread_hijack.cpp.o" \
-"CMakeFiles/injector.dir/src/stealth/header_erase.cpp.o" \
-"CMakeFiles/injector.dir/src/stealth/dll_scramble.cpp.o" \
 "CMakeFiles/injector.dir/src/platform/mac/process_macos.cpp.o"
 
 # External object files for target injector
@@ -234,13 +189,10 @@ injector: CMakeFiles/injector.dir/src/core/process.cpp.o
 injector: CMakeFiles/injector.dir/src/core/memory.cpp.o
 injector: CMakeFiles/injector.dir/src/methods/manual_map.cpp.o
 injector: CMakeFiles/injector.dir/src/methods/loadlibrary.cpp.o
-injector: CMakeFiles/injector.dir/src/methods/thread_hijack.cpp.o
-injector: CMakeFiles/injector.dir/src/stealth/header_erase.cpp.o
-injector: CMakeFiles/injector.dir/src/stealth/dll_scramble.cpp.o
 injector: CMakeFiles/injector.dir/src/platform/mac/process_macos.cpp.o
 injector: CMakeFiles/injector.dir/build.make
 injector: CMakeFiles/injector.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/aidan/Desktop/git/repos/injector/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX executable injector"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/aidan/Desktop/git/repos/injector/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable injector"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/injector.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

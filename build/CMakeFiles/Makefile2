@@ -85,12 +85,12 @@ clean: CMakeFiles/injector.dir/clean
 CMakeFiles/injector.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/injector.dir/build.make CMakeFiles/injector.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/injector.dir/build.make CMakeFiles/injector.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/aidan/Desktop/git/repos/injector/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11 "Built target injector"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/aidan/Desktop/git/repos/injector/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8 "Built target injector"
 .PHONY : CMakeFiles/injector.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/injector.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/aidan/Desktop/git/repos/injector/build/CMakeFiles 11
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/aidan/Desktop/git/repos/injector/build/CMakeFiles 8
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/injector.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/aidan/Desktop/git/repos/injector/build/CMakeFiles 0
 .PHONY : CMakeFiles/injector.dir/rule
@@ -102,7 +102,7 @@ injector: CMakeFiles/injector.dir/rule
 # codegen rule for target.
 CMakeFiles/injector.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/injector.dir/build.make CMakeFiles/injector.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/aidan/Desktop/git/repos/injector/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11 "Finished codegen for target injector"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/aidan/Desktop/git/repos/injector/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8 "Finished codegen for target injector"
 .PHONY : CMakeFiles/injector.dir/codegen
 
 # clean rule for target.
