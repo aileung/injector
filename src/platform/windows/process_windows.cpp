@@ -84,11 +84,18 @@ void *Process::create_thread(void *start_routine, void *argument) {
   }
 
   HANDLE thread = CreateRemoteThread(
-      imple->handle, nullptr, 0,
+      impl->handle, nullptr, 0,
       reinterpret_cast<LPTHREAD_START_ROUTINE>(start_routine), argument, 0,
       nullptr);
 
   return thread;
+}
+
+int Process::pid() const {
+  if (!impl) {
+    return -1;
+  }
+  return impl->pid;
 }
 
 bool Process::valid() const { return impl && impl->handle; }

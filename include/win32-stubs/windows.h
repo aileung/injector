@@ -1,8 +1,5 @@
 // for lsp support
-
 #pragma once
-#ifndef _WIN32
-
 #include <cstdint>
 
 // types
@@ -26,6 +23,7 @@ typedef long LONG;
 typedef uint64_t ULONGLONG;
 typedef ULONG_PTR DWORD_PTR;
 typedef void *FARPROC;
+typedef DWORD (*LPTHREAD_START_ROUTINE)(LPVOID lpThreadParameter);
 
 // constants
 #define TRUE 1
@@ -38,6 +36,8 @@ typedef void *FARPROC;
 #define PROCESS_VM_OPERATION (0x0008)
 #define PROCESS_CREATE_THREAD (0x0002)
 #define PROCESS_QUERY_INFORMATION (0x0400)
+#define INVALID_HANDLE_VALUE ((HANDLE)(LONG_PTR) - 1)
+#define INFINITE 0xFFFFFFFF
 
 // memory allocation
 #define MEM_COMMIT (0x1000)
@@ -255,8 +255,8 @@ inline BOOL WriteProcessMemory(HANDLE, LPVOID, LPCVOID, SIZE_T, SIZE_T *) {
 inline BOOL ReadProcessMemory(HANDLE, LPCVOID, LPVOID, SIZE_T, SIZE_T *) {
   return 0;
 }
-inline HANDLE CreateRemoteThread(HANDLE, void *, SIZE_T, void *, LPVOID, DWORD,
-                                 DWORD *) {
+inline HANDLE CreateRemoteThread(HANDLE, void *, SIZE_T, LPTHREAD_START_ROUTINE,
+                                 LPVOID, DWORD, DWORD *) {
   return nullptr;
 }
 inline DWORD WaitForSingleObject(HANDLE, DWORD) { return 0; }
@@ -265,5 +265,3 @@ inline FARPROC GetProcAddress(HMODULE, LPCSTR) { return nullptr; }
 inline HMODULE LoadLibraryA(LPCSTR) { return nullptr; }
 inline BOOL FreeLibrary(HMODULE) { return 0; }
 inline DWORD GetLastError() { return 0; }
-
-#endif // _WIN32

@@ -20,6 +20,8 @@ public:
 
   bool valid() const;
 
+  int pid() const;
+
 private:
   struct Impl;
   Impl *impl = nullptr;

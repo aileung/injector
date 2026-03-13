@@ -18,8 +18,6 @@ bool Injector::inject(int pid, const std::string &path,
     break;
   case InjectionMethod::ManualMap:
     break;
-  case InjectionMethod::ThreadHijack:
-    break;
   }
 
   proc.detach();
