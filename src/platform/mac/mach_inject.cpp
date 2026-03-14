@@ -38,5 +38,5 @@ void *Process::execute(void *address, void *arg) {
     return nullptr;
   }
 
-  return (void *)thread;
+  return reinterpret_cast<void *>((uintptr_t)thread);
 }
