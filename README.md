@@ -32,7 +32,7 @@ Options:
 
 ## general process (maybe put into blog)
 
-### windows - dll injection
+### windows - dll injection (load library complete, manual mapping in progress)
 
 1. *open* the target process with `OpenProcess` (requires `PROCESS_ALL_ACCESS`)
 2. *allocate* memory in the remote process with `VirtualAllocEx`
@@ -40,14 +40,14 @@ Options:
 4. *spawn* a remote thread with `CreateRemoteThread`, pointing at `LoadLibraryA`
 5. *The target process loads your DLL and calls its `DllMain`
 
-### linux — gdb injection
+### linux — gdb injection (haven't started yet)
 
 1. *attach* gdb to the target pid
 2. *find* `dlopen` in the target's memory map (`/proc/<pid>/maps`)
 3. *call* `dlopen("mylib.so", RTLD_NOW)` via gdb's `call` command
 4. *detach* gdb
 
-### macOS — mach injection
+### macOS — mach injection (fix aslr and rewrite from intel to arm macs)
 
 1. *aquire* a Mach task port via `task_for_pid` (requires entitlements or root)
 2. *allocate* remote memory with `mach_vm_allocate`
