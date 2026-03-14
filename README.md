@@ -47,7 +47,7 @@ Options:
 3. *call* `dlopen("mylib.so", RTLD_NOW)` via gdb's `call` command
 4. *detach* gdb
 
-### macOS — mach injection (fix aslr and rewrite from intel to arm macs)
+### macOS — mach injection (resolve symbols)
 
 1. *aquire* a Mach task port via `task_for_pid` (requires entitlements or root)
 2. *allocate* remote memory with `mach_vm_allocate`

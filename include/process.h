@@ -1,6 +1,7 @@
 #pragma once
 
 #include <cstddef>
+#include <cstdint>
 
 class Process {
 public:
@@ -16,15 +17,22 @@ public:
   bool write(void *address, const void *data, std::size_t size);
   bool read(void *address, void *buffer, std::size_t size);
 
-  void *create_thread(void *start_routine, void *argument);
+  unsigned int create_thread(void *start_routine, void *argument);
+  bool wait_thread(unsigned int thread);
+  uint64_t thread_result(unsigned int thread);
 
   bool valid() const;
-
   int pid() const;
 
   void *execute(void *address, void *arg);
 
+#ifdef __APPLE__
+  unsigned int task_port() const;
+#endif
+
 private:
+  int pid_ = -1;
+
   struct Impl;
   Impl *impl = nullptr;
 

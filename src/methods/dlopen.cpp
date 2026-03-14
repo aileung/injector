@@ -1,4 +1,5 @@
 #include "methods/dlopen.h"
+#include "platform/mac/mac_modules.h"
 #include "process.h"
 
 #include <cstring>
@@ -30,12 +31,39 @@ bool inject_dlopen(Process &proc, const std::string &dylib_path) {
     return false;
   }
 
-  // start remote thread
-  void *thread = proc.execute(local_dlopen, remote_string);
+  // find local libdyld base
+  uintptr_t local_libdyld = find_local_module("libdyld");
+
+  // find remote libdyld base
+  uintptr_t remote_libdyld = find_remote_module(proc, "libdyld");
+
+  if (!local_libdyld || !remote_libdyld) {
+    return false;
+  }
+
+  // compute offset
+  uintptr_t offset = (uintptr_t)local_dlopen - local_libdyld;
+
+  // compute remote dlopen
+  void *remote_dlopen = (void *)(remote_libdyld + offset);
+
+  // execute remote thread
+  void *thread = proc.execute(remote_dlopen, remote_string);
 
   if (!thread) {
     return false;
   }
+
+  proc.wait_thread(thread);
+
+  uint64_t result = proc.thread_result(thread);
+
+  if (!result) {
+    printf("dlopen failed\n");
+    return false;
+  }
+
+  printf("dlopen returned handle: %p\n", (void *)result);
 
   return true;
 }

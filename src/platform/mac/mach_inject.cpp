@@ -5,6 +5,9 @@
 #include <mach/mach_vm.h>
 #include <mach/thread_act.h>
 
+#include <cstring>
+#include <dlfcn.h>
+
 void *Process::execute(void *address, void *arg) {
   if (!valid()) {
     return nullptr;
@@ -22,12 +25,16 @@ void *Process::execute(void *address, void *arg) {
   mach_vm_address_t stack_top = stack + stack_size;
 
   // thread stack
-  arm_thread_state64_t state{};
+  arm_thread_state64_t state;
+  memset(&state, 0, sizeof(state));
 
   state.__pc = (uint64_t)address;
   state.__x[0] = (uint64_t)arg;
+  state.__x[1] = RTLD_NOW;
+
   state.__sp = stack_top & ~0xFull;
   state.__fp = stack_top;
+
   thread_act_t thread;
 
   kern_return_t result =
