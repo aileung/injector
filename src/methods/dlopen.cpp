@@ -25,34 +25,18 @@ bool inject_dlopen(Process &proc, const std::string &dylib_path) {
   }
 
   // resolve local dlopen
-  void *local_dlopen = (void *)dlopen;
-
-  if (!local_dlopen) {
-    return false;
-  }
-
-  // find local libdyld base
   uintptr_t local_libdyld = find_local_module("libdyld");
-
-  // find remote libdyld base
   uintptr_t remote_libdyld = find_remote_module(proc, "libdyld");
 
   if (!local_libdyld || !remote_libdyld) {
     return false;
   }
 
-  // compute offset
-  uintptr_t offset = (uintptr_t)local_dlopen - local_libdyld;
+  uintptr_t offset = (uintptr_t)dlopen - local_libdyld;
 
-  // compute remote dlopen
   void *remote_dlopen = (void *)(remote_libdyld + offset);
 
-  // execute remote thread
-  void *thread = proc.execute(remote_dlopen, remote_string);
-
-  if (!thread) {
-    return false;
-  }
+  unsigned int thread = proc.execute(remote_dlopen, remote_string);
 
   proc.wait_thread(thread);
 

@@ -8,9 +8,9 @@
 #include <cstring>
 #include <dlfcn.h>
 
-void *Process::execute(void *address, void *arg) {
+unsigned int Process::execute(void *address, void *arg) {
   if (!valid()) {
-    return nullptr;
+    return 0;
   }
 
   mach_vm_address_t stack = 0;
@@ -19,7 +19,7 @@ void *Process::execute(void *address, void *arg) {
   // allocate stack
   if (mach_vm_allocate(task, &stack, stack_size, VM_FLAGS_ANYWHERE) !=
       KERN_SUCCESS) {
-    return nullptr;
+    return 0;
   }
 
   mach_vm_address_t stack_top = stack + stack_size;
@@ -42,8 +42,8 @@ void *Process::execute(void *address, void *arg) {
                             ARM_THREAD_STATE64_COUNT, &thread);
 
   if (result != KERN_SUCCESS) {
-    return nullptr;
+    return 0;
   }
 
-  return reinterpret_cast<void *>((uintptr_t)thread);
+  return thread;
 }

@@ -24,7 +24,7 @@ public:
   bool valid() const;
   int pid() const;
 
-  void *execute(void *address, void *arg);
+  unsigned int execute(void *address, void *arg);
 
 #ifdef __APPLE__
   unsigned int task_port() const;
